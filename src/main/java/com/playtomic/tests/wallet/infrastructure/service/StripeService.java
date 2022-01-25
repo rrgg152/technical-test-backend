@@ -1,6 +1,9 @@
-package com.playtomic.tests.wallet.service;
+package com.playtomic.tests.wallet.infrastructure.service;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import com.playtomic.tests.wallet.domain.CreditCardNumer;
+import com.playtomic.tests.wallet.domain.PaymentGateway;
+import com.playtomic.tests.wallet.domain.WalletAmount;
 import com.sun.istack.NotNull;
 import lombok.AllArgsConstructor;
 import lombok.NonNull;
@@ -20,7 +23,7 @@ import java.net.URI;
  * This dummy implementation throws an error when trying to charge less than 10€.
  */
 @Service
-public class StripeService {
+public class StripeService implements PaymentGateway {
 
     @NonNull
     private URI chargesUri;
@@ -31,8 +34,8 @@ public class StripeService {
     @NonNull
     private RestTemplate restTemplate;
 
-    public StripeService(@Value("stripe.simulator.charges-uri") @NonNull URI chargesUri,
-                         @Value("stripe.simulator.refunds-uri") @NonNull URI refundsUri,
+    public StripeService(@Value("${stripe.simulator.charges-uri}") @NonNull URI chargesUri,
+                         @Value("${stripe.simulator.refunds-uri}") @NonNull URI refundsUri,
                          @NotNull RestTemplateBuilder restTemplateBuilder) {
         this.chargesUri = chargesUri;
         this.refundsUri = refundsUri;
@@ -64,6 +67,11 @@ public class StripeService {
     public void refund(@NonNull String paymentId) throws StripeServiceException {
         // Object.class because we don't read the body here.
         restTemplate.postForEntity(chargesUri.toString(), null, Object.class, paymentId);
+    }
+
+    @Override
+    public void charge(CreditCardNumer creditCard, WalletAmount amount) {
+        this.charge(creditCard.value(), amount.value());
     }
 
     @AllArgsConstructor
