@@ -16,8 +16,8 @@ public class WalletIncrementer {
 
     public void increment(PaymentId paymentId, WalletId walletId, WalletAmount amount){
         Wallet wallet=finder.find(walletId);
-        if (!wallet.hasIncremented(paymentId)){
-            wallet.rechargeWallet(amount, paymentId);
+        if (!wallet.hasRecharged(paymentId)){
+            wallet.recharge(amount, paymentId);
             repository.save(wallet);
         }
 

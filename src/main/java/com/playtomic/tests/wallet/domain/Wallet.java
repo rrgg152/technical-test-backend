@@ -43,15 +43,15 @@ public class Wallet extends AggregateRoot {
     public void paymentFinished(WalletAmount amount, PaymentId paymentId) {
         record(new PaymentFinishedDomainEvent(new WalletId(id), amount, paymentId));
     }
-    public void rechargeWallet(WalletAmount amount, PaymentId paymentId) {
-        current_balance=current_balance.add(amount.value());
+    public void recharge(WalletAmount amount, PaymentId paymentId) {
+        current_balance=current_balance().Sum(amount).value();
         if (this.paymentsId == null || this.paymentsId.isEmpty()){
             this.paymentsId = new ArrayList<>();
         }
         this.paymentsId.add(paymentId.value());
     }
 
-    public boolean hasIncremented(PaymentId paymentId) {
+    public boolean hasRecharged(PaymentId paymentId) {
         return paymentsId.contains(paymentId.value());
     }
 

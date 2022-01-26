@@ -26,4 +26,8 @@ public class WalletBalance {
     public int hashCode() {
         return Objects.hash(value);
     }
+
+    public WalletBalance Sum(WalletAmount amount) {
+        return new WalletBalance(value.add(amount.value()));
+    }
 }
