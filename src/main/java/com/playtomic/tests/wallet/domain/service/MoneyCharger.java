@@ -24,13 +24,13 @@ public class MoneyCharger {
         this.generator = generator;
     }
 
-    public void charge(TopUpMoneyCommand command){
+    public void charge(WalletId id, CreditCardNumer creditCard, WalletAmount amount){
 
-        Wallet wallet = finder.find(new WalletId(command.id()));
+        Wallet wallet = finder.find(id);
 
-        paymentGateway.charge(new CreditCardNumer(command.creditCard()), new WalletAmount(command.amount()));
+        paymentGateway.charge(creditCard, amount);
 
-        wallet.paymentFinished(new WalletAmount(command.amount()), new PaymentId(generator.generate()));
+        wallet.paymentFinished(amount, new PaymentId(generator.generate()));
 
         eventBus.publish(wallet.pullDomainEvents());
     }
