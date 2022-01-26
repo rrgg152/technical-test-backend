@@ -1,16 +1,14 @@
 package com.playtomic.tests.wallet.application.find;
 
 import com.playtomic.tests.wallet.application.WalletResponse;
-import com.playtomic.tests.wallet.application.find.FindWalletQuery;
-import com.playtomic.tests.wallet.application.find.FindWalletQueryHandler;
 import com.playtomic.tests.wallet.domain.Wallet;
 import com.playtomic.tests.wallet.domain.WalletBalance;
 import com.playtomic.tests.wallet.domain.WalletId;
 import com.playtomic.tests.wallet.domain.WalletRepository;
 import com.playtomic.tests.wallet.domain.error.WalletNotExistError;
 import com.playtomic.tests.wallet.domain.service.WalletFinder;
-import com.playtomic.tests.wallet.shared.domain.UuidGenerator;
-import com.playtomic.tests.wallet.shared.infrastructure.JavaUuidGenerator;
+import com.playtomic.tests.shared.domain.UuidGenerator;
+import com.playtomic.tests.shared.infrastructure.JavaUuidGenerator;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;

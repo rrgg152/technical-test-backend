@@ -1,6 +1,6 @@
 package com.playtomic.tests.wallet.domain;
 
-import com.playtomic.tests.wallet.shared.domain.bus.event.DomainEvent;
+import com.playtomic.tests.shared.domain.bus.event.DomainEvent;
 
 import java.util.Objects;
 

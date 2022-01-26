@@ -1,7 +1,7 @@
 package com.playtomic.tests.wallet.domain;
 
-import com.playtomic.tests.wallet.shared.domain.AggregateRoot;
-import com.playtomic.tests.wallet.shared.domain.StringListConverter;
+import com.playtomic.tests.shared.domain.AggregateRoot;
+import com.playtomic.tests.shared.domain.StringListConverter;
 
 import javax.persistence.*;
 import java.math.BigDecimal;

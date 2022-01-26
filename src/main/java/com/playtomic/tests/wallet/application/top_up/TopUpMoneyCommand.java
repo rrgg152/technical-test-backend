@@ -1,6 +1,6 @@
 package com.playtomic.tests.wallet.application.top_up;
 
-import com.playtomic.tests.wallet.shared.domain.bus.command.Command;
+import com.playtomic.tests.shared.domain.bus.command.Command;
 
 import java.math.BigDecimal;
 

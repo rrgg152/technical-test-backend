@@ -3,7 +3,7 @@ package com.playtomic.tests.wallet.api;
 import com.playtomic.tests.wallet.domain.error.InsufficientAmountError;
 import com.playtomic.tests.wallet.domain.error.InvalidUUIDFormatError;
 import com.playtomic.tests.wallet.domain.error.WalletNotExistError;
-import com.playtomic.tests.wallet.shared.domain.DomainError;
+import com.playtomic.tests.shared.domain.DomainError;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

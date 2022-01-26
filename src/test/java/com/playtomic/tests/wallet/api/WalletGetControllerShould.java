@@ -1,12 +1,11 @@
 package com.playtomic.tests.wallet.api;
 
 
-import com.playtomic.tests.wallet.api.DetailWalletGetController;
 import com.playtomic.tests.wallet.api.dto.WalletResponse;
 import com.playtomic.tests.wallet.application.find.FindWalletQuery;
-import com.playtomic.tests.wallet.shared.domain.UuidGenerator;
-import com.playtomic.tests.wallet.shared.domain.bus.query.QueryBus;
-import com.playtomic.tests.wallet.shared.infrastructure.JavaUuidGenerator;
+import com.playtomic.tests.shared.domain.UuidGenerator;
+import com.playtomic.tests.shared.domain.bus.query.QueryBus;
+import com.playtomic.tests.shared.infrastructure.JavaUuidGenerator;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;

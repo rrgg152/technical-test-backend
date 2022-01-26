@@ -1,6 +1,6 @@
 package com.playtomic.tests.wallet.domain.error;
 
-import com.playtomic.tests.wallet.shared.domain.DomainError;
+import com.playtomic.tests.shared.domain.DomainError;
 
 import java.math.BigDecimal;
 

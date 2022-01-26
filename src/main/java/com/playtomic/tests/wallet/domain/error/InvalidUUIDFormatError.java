@@ -1,6 +1,6 @@
 package com.playtomic.tests.wallet.domain.error;
 
-import com.playtomic.tests.wallet.shared.domain.DomainError;
+import com.playtomic.tests.shared.domain.DomainError;
 
 public class InvalidUUIDFormatError extends DomainError {
     public InvalidUUIDFormatError(String message) {

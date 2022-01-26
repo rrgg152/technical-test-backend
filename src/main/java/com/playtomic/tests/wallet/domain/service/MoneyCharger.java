@@ -2,9 +2,9 @@ package com.playtomic.tests.wallet.domain.service;
 
 import com.playtomic.tests.wallet.application.top_up.TopUpMoneyCommand;
 import com.playtomic.tests.wallet.domain.*;
-import com.playtomic.tests.wallet.shared.domain.DomainService;
-import com.playtomic.tests.wallet.shared.domain.UuidGenerator;
-import com.playtomic.tests.wallet.shared.domain.bus.event.EventBus;
+import com.playtomic.tests.shared.domain.DomainService;
+import com.playtomic.tests.shared.domain.UuidGenerator;
+import com.playtomic.tests.shared.domain.bus.event.EventBus;
 
 @DomainService
 public class MoneyCharger {

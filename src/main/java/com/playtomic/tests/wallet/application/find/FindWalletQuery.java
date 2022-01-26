@@ -1,6 +1,6 @@
 package com.playtomic.tests.wallet.application.find;
 
-import com.playtomic.tests.wallet.shared.domain.bus.query.Query;
+import com.playtomic.tests.shared.domain.bus.query.Query;
 
 import java.util.Objects;
 

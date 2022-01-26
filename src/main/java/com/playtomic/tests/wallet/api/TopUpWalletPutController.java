@@ -2,9 +2,9 @@ package com.playtomic.tests.wallet.api;
 
 import com.playtomic.tests.wallet.api.dto.TopUpMoneyRequest;
 import com.playtomic.tests.wallet.application.top_up.TopUpMoneyCommand;
-import com.playtomic.tests.wallet.shared.domain.bus.command.Command;
-import com.playtomic.tests.wallet.shared.domain.bus.command.CommandBus;
-import com.playtomic.tests.wallet.shared.domain.bus.command.error.CommandHandlerExecutionError;
+import com.playtomic.tests.shared.domain.bus.command.Command;
+import com.playtomic.tests.shared.domain.bus.command.CommandBus;
+import com.playtomic.tests.shared.domain.bus.command.error.CommandHandlerExecutionError;
 import io.swagger.v3.oas.annotations.media.Schema;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

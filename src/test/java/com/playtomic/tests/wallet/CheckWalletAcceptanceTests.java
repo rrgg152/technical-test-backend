@@ -1,10 +1,10 @@
 package com.playtomic.tests.wallet;
 
 import com.playtomic.tests.wallet.domain.*;
-import com.playtomic.tests.wallet.shared.domain.UuidGenerator;
-import com.playtomic.tests.wallet.shared.domain.bus.event.DomainEvent;
-import com.playtomic.tests.wallet.shared.domain.bus.event.EventBus;
-import com.playtomic.tests.wallet.shared.infrastructure.JavaUuidGenerator;
+import com.playtomic.tests.shared.domain.UuidGenerator;
+import com.playtomic.tests.shared.domain.bus.event.DomainEvent;
+import com.playtomic.tests.shared.domain.bus.event.EventBus;
+import com.playtomic.tests.shared.infrastructure.JavaUuidGenerator;
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import org.json.JSONException;

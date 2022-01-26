@@ -2,9 +2,9 @@ package com.playtomic.tests.wallet.api;
 
 import com.playtomic.tests.wallet.api.dto.WalletResponse;
 import com.playtomic.tests.wallet.application.find.FindWalletQuery;
-import com.playtomic.tests.wallet.shared.domain.bus.query.Query;
-import com.playtomic.tests.wallet.shared.domain.bus.query.QueryBus;
-import com.playtomic.tests.wallet.shared.domain.bus.query.error.QueryHandlerExecutionError;
+import com.playtomic.tests.shared.domain.bus.query.Query;
+import com.playtomic.tests.shared.domain.bus.query.QueryBus;
+import com.playtomic.tests.shared.domain.bus.query.error.QueryHandlerExecutionError;
 import io.swagger.v3.oas.annotations.media.Schema;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

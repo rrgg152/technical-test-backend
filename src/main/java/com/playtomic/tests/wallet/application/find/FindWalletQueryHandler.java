@@ -4,8 +4,8 @@ import com.playtomic.tests.wallet.application.WalletResponse;
 import com.playtomic.tests.wallet.domain.WalletId;
 import com.playtomic.tests.wallet.domain.error.WalletNotExistError;
 import com.playtomic.tests.wallet.domain.service.WalletFinder;
-import com.playtomic.tests.wallet.shared.domain.Handler;
-import com.playtomic.tests.wallet.shared.domain.bus.query.QueryHandler;
+import com.playtomic.tests.shared.domain.Handler;
+import com.playtomic.tests.shared.domain.bus.query.QueryHandler;
 
 @Handler
 public final class FindWalletQueryHandler implements QueryHandler<FindWalletQuery, WalletResponse> {

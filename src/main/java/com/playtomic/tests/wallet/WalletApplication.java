@@ -1,7 +1,7 @@
 package com.playtomic.tests.wallet;
 
-import com.playtomic.tests.wallet.shared.domain.DomainService;
-import com.playtomic.tests.wallet.shared.domain.Handler;
+import com.playtomic.tests.shared.domain.DomainService;
+import com.playtomic.tests.shared.domain.Handler;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;

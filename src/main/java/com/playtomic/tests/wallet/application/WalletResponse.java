@@ -1,7 +1,7 @@
 package com.playtomic.tests.wallet.application;
 
 import com.playtomic.tests.wallet.domain.Wallet;
-import com.playtomic.tests.wallet.shared.domain.bus.query.Response;
+import com.playtomic.tests.shared.domain.bus.query.Response;
 
 import java.util.Objects;
 

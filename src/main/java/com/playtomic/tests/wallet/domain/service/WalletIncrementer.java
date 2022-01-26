@@ -1,7 +1,7 @@
 package com.playtomic.tests.wallet.domain.service;
 
 import com.playtomic.tests.wallet.domain.*;
-import com.playtomic.tests.wallet.shared.domain.DomainService;
+import com.playtomic.tests.shared.domain.DomainService;
 
 @DomainService
 public class WalletIncrementer {

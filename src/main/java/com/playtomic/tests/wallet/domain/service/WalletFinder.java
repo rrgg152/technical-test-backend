@@ -4,7 +4,7 @@ import com.playtomic.tests.wallet.domain.Wallet;
 import com.playtomic.tests.wallet.domain.WalletId;
 import com.playtomic.tests.wallet.domain.error.WalletNotExistError;
 import com.playtomic.tests.wallet.domain.WalletRepository;
-import com.playtomic.tests.wallet.shared.domain.DomainService;
+import com.playtomic.tests.shared.domain.DomainService;
 
 @DomainService
 public class WalletFinder {
